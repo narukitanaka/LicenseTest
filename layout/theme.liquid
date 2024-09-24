@@ -31,23 +31,24 @@
 
     <script>
       document.addEventListener('DOMContentLoaded', function() {
-          var encodedUrl = "aHR0cHM6Ly9naC1jaGVjay5jb20vbGljZW5zZS10ZXN0L2pzL2xpY2Vuc2Utd2FybmluZy5qcw==";
-          var decodedUrl = atob(encodedUrl); // URLをデコード
+          var licenseKey = "{{ settings.licens_key }}"; // Shopify設定からライセンスキーを取得
+          console.log(licenseKey);
 
-          console.log("Decoded URL:", decodedUrl); // デコードされたURLを確認する
-
-          // スクリプトタグを動的に作成して挿入
+          // 外部スクリプトを動的に読み込む
           var script = document.createElement('script');
-          script.src = decodedUrl; // デコードしたURLを使用
-          script.async = true; // 非同期で読み込む
-          document.head.appendChild(script); // スクリプトタグをheadに挿入
+          script.src = "https://gh-check.com/license-test/js/license-warning.js"; // 外部スクリプトURL
+          script.async = true;
+          document.head.appendChild(script);
 
-          // スクリプトが正常にロードされたか確認
+          // スクリプトがロードされた後にライセンスキーを外部サーバーに渡す
           script.onload = function() {
-              console.log("Script loaded successfully");
+              if (window.verifyLicense) {
+                  // 外部スクリプトのライセンス検証関数を呼び出す
+                  window.verifyLicense(licenseKey);
+              }
           };
           script.onerror = function() {
-              console.error("Failed to load script");
+              console.error("外部スクリプトの読み込みに失敗しました。");
           };
       });
     </script>
