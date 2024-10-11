@@ -49,6 +49,47 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "rating_r7Yn64": {
+          "type": "rating",
+          "settings": {
+          }
+        },
+        "popup_LADbF9": {
+          "type": "popup",
+          "settings": {
+            "text": "ポップアップリンクのテキスト",
+            "page": "company"
+          }
+        },
+        "collapsible_tab_aRkte6": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "折りたたみ可能な行",
+            "icon": "check_mark",
+            "content": "<p>あああああああ<\/p>",
+            "page": ""
+          }
+        },
+        "custom_liquid_CyC9yU": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": ""
+          }
+        },
+        "inventory_8Fa7hN": {
+          "type": "inventory",
+          "settings": {
+            "text_style": "body",
+            "inventory_threshold": 10,
+            "show_inventory_quantity": true
+          }
+        },
+        "sku_BWY3t8": {
+          "type": "sku",
+          "settings": {
+            "text_style": "body"
+          }
         }
       },
       "block_order": [
@@ -59,18 +100,24 @@
         "quantity_selector",
         "buy_buttons",
         "description",
-        "share"
+        "share",
+        "rating_r7Yn64",
+        "popup_LADbF9",
+        "collapsible_tab_aRkte6",
+        "custom_liquid_CyC9yU",
+        "inventory_8Fa7hN",
+        "sku_BWY3t8"
       ],
       "settings": {
         "enable_sticky_info": true,
         "color_scheme": "scheme-1",
-        "media_size": "large",
+        "media_size": "medium",
         "constrain_to_viewport": true,
         "media_fit": "contain",
-        "gallery_layout": "stacked",
+        "gallery_layout": "thumbnail",
         "media_position": "left",
-        "image_zoom": "lightbox",
-        "mobile_thumbnails": "hide",
+        "image_zoom": "none",
+        "mobile_thumbnails": "show",
         "hide_variants": true,
         "enable_video_looping": false,
         "padding_top": 36,
@@ -94,10 +141,27 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "1727918910b19ac379": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_pweh9r": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_pweh9r"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "main",
-    "related-products"
+    "related-products",
+    "1727918910b19ac379"
   ]
 }

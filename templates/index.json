@@ -39,37 +39,348 @@
         "show_text_below": false
       }
     },
+    "rich_text_cddphr": {
+      "type": "rich-text",
+      "blocks": {
+        "caption_iLWq7r": {
+          "type": "caption",
+          "settings": {
+            "caption": "SUB TITLE",
+            "text_style": "subtitle",
+            "text_size": "medium"
+          }
+        },
+        "heading_xtfF7K": {
+          "type": "heading",
+          "settings": {
+            "heading": "見出し",
+            "heading_size": "h1"
+          }
+        },
+        "text_k9AMkj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>ブランドに関する情報をお客様と共有します。商品を説明したり、告知をしたり、ストアへのお客様を歓迎したりします。<\/p>"
+          }
+        },
+        "button_xRwBjT": {
+          "type": "button",
+          "settings": {
+            "button_label": "ボタンのラベル",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "caption_iLWq7r",
+        "heading_xtfF7K",
+        "text_k9AMkj",
+        "button_xRwBjT"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Featured products",
+        "title": "カテゴリ名",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "all",
-        "products_to_show": 8,
+        "collection": "frontpage",
+        "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
         "enable_desktop_slider": false,
         "color_scheme": "scheme-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
+        "image_ratio": "square",
+        "image_shape": "blob",
         "show_secondary_image": true,
         "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
+        "show_rating": true,
+        "quick_add": "standard",
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 44,
+        "padding_bottom": 36
+      }
+    },
+    "featured_product_tLxzWd": {
+      "type": "featured-product",
+      "blocks": {
+        "text_NVUC4q": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title_GaUrai": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price_kL3Uer": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "variant_picker_aT4wDB": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector_hzakUV": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "buy_buttons_qWTE84": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "share_NbYD9k": {
+          "type": "share",
+          "settings": {
+            "share_label": "共有"
+          }
+        },
+        "icon_with_text_4c7mcp": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "horizontal",
+            "icon_1": "heart",
+            "heading_1": "見出し",
+            "icon_2": "return",
+            "heading_2": "見出し",
+            "icon_3": "truck",
+            "heading_3": "見出し"
+          }
+        },
+        "rating_qfUHAn": {
+          "type": "rating",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "text_NVUC4q",
+        "title_GaUrai",
+        "price_kL3Uer",
+        "variant_picker_aT4wDB",
+        "quantity_selector_hzakUV",
+        "buy_buttons_qWTE84",
+        "share_NbYD9k",
+        "icon_with_text_4c7mcp",
+        "rating_qfUHAn"
+      ],
+      "settings": {
+        "product": "00001",
+        "color_scheme": "",
+        "secondary_background": true,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_thmKqz": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_pGFezE": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/hiyayakko.jpg",
+            "title": "豆腐",
+            "text": "<p>選択した商品、コレクション、ブログ記事に注目を集めるため、テキストと画像を組み合わせます。可用性、スタイル、またはレビュー提供についての詳細を追加します。<\/p>",
+            "link_label": "商品ページへ進む",
+            "link": "shopify:\/\/products\/00001"
+          }
+        },
+        "column_HdzHck": {
+          "type": "column",
+          "settings": {
+            "title": "列",
+            "text": "<p>選択した商品、コレクション、ブログ記事に注目を集めるため、テキストと画像を組み合わせます。可用性、スタイル、またはレビュー提供についての詳細を追加します。<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_EzNWY7": {
+          "type": "column",
+          "settings": {
+            "title": "列",
+            "text": "<p>選択した商品、コレクション、ブログ記事に注目を集めるため、テキストと画像を組み合わせます。可用性、スタイル、またはレビュー提供についての詳細を追加します。<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_iWJY4E": {
+          "type": "column",
+          "settings": {
+            "title": "列",
+            "text": "<p>選択した商品、コレクション、ブログ記事に注目を集めるため、テキストと画像を組み合わせます。可用性、スタイル、またはレビュー提供についての詳細を追加します。<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_zFCgdR": {
+          "type": "column",
+          "settings": {
+            "title": "列",
+            "text": "<p>選択した商品、コレクション、ブログ記事に注目を集めるため、テキストと画像を組み合わせます。可用性、スタイル、またはレビュー提供についての詳細を追加します。<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_C7xLnn": {
+          "type": "column",
+          "settings": {
+            "title": "列",
+            "text": "<p>選択した商品、コレクション、ブログ記事に注目を集めるため、テキストと画像を組み合わせます。可用性、スタイル、またはレビュー提供についての詳細を追加します。<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_pGFezE",
+        "column_HdzHck",
+        "column_EzNWY7",
+        "column_iWJY4E",
+        "column_zFCgdR",
+        "column_C7xLnn"
+      ],
+      "settings": {
+        "title": "見出し",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "ボタンのラベル",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_Y4RWwK": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_4TABDV": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "折りたたみ可能な行",
+            "icon": "check_mark",
+            "row_content": "<p>ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー大ーダミー<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_eAtiXb": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "折りたたみ可能な行",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_kPT9kB": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "折りたたみ可能な行",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_gHPBiC": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "折りたたみ可能な行",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_W8KXCr": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "折りたたみ可能な行",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_4TABDV",
+        "collapsible_row_eAtiXb",
+        "collapsible_row_kPT9kB",
+        "collapsible_row_gHPBiC",
+        "collapsible_row_W8KXCr"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "FAQ",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": true,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 100
+      }
+    },
+    "contact_form_ktc4Qc": {
+      "type": "contact-form",
+      "settings": {
+        "heading": "お問い合わせフォーム",
+        "heading_size": "h1",
+        "color_scheme": "",
+        "padding_top": 36,
         "padding_bottom": 36
       }
     }
   },
   "order": [
     "image_banner",
-    "featured_collection"
+    "rich_text_cddphr",
+    "featured_collection",
+    "featured_product_tLxzWd",
+    "multicolumn_thmKqz",
+    "collapsible_content_Y4RWwK",
+    "contact_form_ktc4Qc"
   ]
 }
